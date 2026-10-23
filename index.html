@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -381,6 +380,41 @@
       <button onclick="showPage('contact')">Contact</button>
     </div>
   </nav>
+
+  <!-- MUSIC PLAYER: STAR - NADIN AMIZAH -->
+  <div id="music-player" style="
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: #f7f6f2;
+    border-bottom: 1px solid #e5e3dc;
+    padding: 12px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+  ">
+    <div>
+      <strong style="font-family: 'Playfair Display', serif;">
+        ♡ —star.
+      </strong>
+      <p style="font-size: 12px; color: #77776f;">
+        Nadin Amizah · a little song for you
+      </p>
+    </div>
+
+    <iframe
+      width="220"
+      height="70"
+      src="vidio/Star-Nadin Amizah.mp4"
+      title="Nadin Amizah - -star. Official Lyrics Video"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      style="border: 0; border-radius: 5px;"
+    ></iframe>
+  </div>
+
   <main>
     <!-- HOME -->
     <section id="home" class="page active">
@@ -389,9 +423,13 @@
           <span class="eyebrow">Welcome to My Little Space</span>
           <h1>Hai, aku<br>Nazwa!</h1>
           <p>
-            Welcome to my little corner of the internet! Di sini kamu bisa
-            kenal aku lebih dekat, lihat foto-fotoku, dan intip hal-hal
-            yang aku suka. Yuk, jalan-jalan di website-ku!
+            Welcome to my little corner of the internet! ✨
+           Di sini, kamu bisa mengenal aku lebih dekat,
+            melihat potongan cerita dari hidupku, 
+            dan hal-hal kecil yang berarti buatku. 
+            Seperti bintang yang punya cahayanya sendiri, 
+            semoga kamu bisa menemukan sedikit gambaran 
+            tentang siapa aku lewat ruang kecil ini. ♡
           </p>
           <button class="button" onclick="showPage('profil')">
             Kenalan Yuk! →
@@ -403,12 +441,13 @@
         </div>
         <div class="photo-frame">
           <img class="hero-photo"
-            src="myfoto.jpeg"
+            src="foto/myfoto.jpeg"
             alt="Foto Nazwa"
             onerror="this.onerror=null; this.src='https://placehold.co/500x625/e5e2d9/55554d?text=Masukkan+Foto+Kamu';">
         </div>
       </div>
     </section>
+
     <!-- ABOUT -->
     <section id="about" class="page">
       <div class="section-head">
@@ -418,21 +457,21 @@
       </div>
       <div class="about-layout">
         <img class="about-photo"
-          src="myfoto.jpeg"
+          src="foto/myfoto.jpeg"
           alt="Foto profil"
           onerror="this.onerror=null; this.src='https://placehold.co/400x530/e5e2d9/55554d?text=Foto+Profil';">
         <div class="about-text">
           <h2>Jadi, Ini Aku! ✨</h2>
-          <p>Hai, aku Nazwa Luna Alifia! Aku seorang pelajar yang suka belajar hal baru, mencoba hal-hal seru, dan menuangkan ide kreatif. Masih banyak yang pengin aku pelajari, jadi perjalanan ini baru mulai!</p>
-          <p>Buat aku, nggak harus langsung jago buat mulai sesuatu. Yang penting berani mencoba, menikmati prosesnya, dan terus berkembang sedikit demi sedikit. Website ini jadi tempat kecil buat berbagi cerita tentang aku dan hal-hal yang aku suka. Makasih udah mampir, ya! 💗</p>
-          
-<div class="info">
-  <div><strong>Nama</strong><span>Nazwa Luna Alifia</span></div>
-  <div><strong>Status</strong><span>Pelajar</span></div>
-  <div><strong>Hobi</strong><span>Watching movies </span></div>
-  <div><strong>Organisasi</strong><span>Aktif di HIMA FKOM </span></div>
-  <div><strong>Domisili</strong><span>Kabupaten Sumedang</span></div>
-</div>
+          <p>Hai, aku Nazwa Luna Alifia! Aku percaya setiap orang punya cahayanya sendiri, begitu juga aku. Aku masih terus belajar, mencoba hal baru, dan mencari tahu banyak hal tentang diriku sendiri. Nggak harus selalu jadi yang paling terang, aku cuma ingin punya cahaya yang bisa menunjukkan siapa diriku sebenarnya.</p>
+           <p>seperti lagu —star. dari Nadin Amizah, aku ingin menjadi seperti bintang yang tetap bersinar dengan caranya sendiri. Buat aku, bersinar bukan berarti harus selalu terlihat hebat atau mendapat perhatian banyak orang. Cukup terus tumbuh, tetap jadi diri sendiri, dan punya arti meski nggak selalu terlihat. ✨</p>
+
+          <div class="info">
+            <div><strong>Nama</strong><span>Nazwa Luna Alifia</span></div>
+            <div><strong>Status</strong><span>Pelajar</span></div>
+            <div><strong>Hobi</strong><span>Watching movies, Drawing, Membuat DIY </span></div>
+            <div><strong>Organisasi</strong><span>HIMA FKOM - PPI</span></div>
+            <div><strong>Domisili</strong><span>Kabupaten Sumedang</span></div>
+          </div>
 
           <button class="button" style="margin-top:25px"
             onclick="showPage('profil')">
@@ -441,6 +480,7 @@
         </div>
       </div>
     </section>
+
     <!-- PROFIL -->
     <section id="profil" class="page">
       <div class="section-head">
@@ -451,7 +491,7 @@
       <div class="grid">
         <div class="card">
           <h3>01. My Personality ✨</h3>
-          <p>Aku suka mencoba hal baru, penasaran sama banyak hal, dan pelan-pelan terus belajar jadi versi terbaik diriku.</p>
+          <p>Aku suka mencoba hal baru, penasaran sama banyak hal, dan pelan-pelan terus belajar jadi versi terbaik dari diri aku.</p>
         </div>
         <div class="card">
           <h3>02. My Hobbies 🍿</h3>
@@ -459,21 +499,22 @@
         </div>
         <div class="card">
           <h3>03. My Little Goals 🌱</h3>
-          <p>Aku pengin terus belajar, nambah pengalaman, dan bikin karya yang suatu hari nanti bisa aku banggakan.</p>
+          <p>Aku ingin terus belajar, nambah pengalaman, mempunyai usaha sendiri, dan bikin karya yang suatu hari nanti bisa aku banggakan.</p>
         </div>
-        
-<div class="card">
-  <h3>04. My Organization 🤝</h3>
-  <p>
-    Aku juga aktif di HIMA FKOM! Buat aku, ikut organisasi jadi
-    kesempatan buat nambah pengalaman, belajar kerja sama,
-    kenal teman-teman baru, dan berkembang bareng.</p>
+        <div class="card">
+          <h3>04. My Organization 🤝</h3>
+          <p>
+            Aku juga aktif di HIMA FKOM - PPI! Buat aku, ikut organisasi jadi
+            kesempatan buat nambah pengalaman, belajar kerja sama,
+            kenal teman-teman baru, dan berkembang bareng.
+          </p>
         </div>
       </div>
       <button class="button" style="margin-top:25px" onclick="showPage('about')">
         Cerita Tentang Aku →
       </button>
     </section>
+
     <!-- GALLERY -->
     <section id="gallery" class="page">
       <div class="section-head">
@@ -483,17 +524,17 @@
       </div>
       <div class="grid">
         <div class="card">
-          <img src="Foto1.jpeg" alt="Momen favorit Nazwa" style="width:100%;height:240px;object-fit:cover;border-radius:5px" onerror="this.style.display='none'">
+          <img src="foto/Foto1.jpeg" alt="Momen favorit Nazwa" style="width:100%;height:240px;object-fit:cover;border-radius:5px" onerror="this.style.display='none'">
           <h3 style="margin-top:15px">Little Moments ✨</h3>
           <p>Momen sederhana yang ternyata punya tempat spesial di ingatan.</p>
         </div>
         <div class="card">
-          <img src="Foto2.jpeg" alt="Hal yang disukai Nazwa" style="width:100%;height:240px;object-fit:cover;border-radius:5px" onerror="this.style.display='none'">
+          <img src="foto/Foto2.jpeg" alt="Hal yang disukai Nazwa" style="width:100%;height:240px;object-fit:cover;border-radius:5px" onerror="this.style.display='none'">
           <h3 style="margin-top:15px">My Favorite Things 💗</h3>
           <p>Hal-hal kecil yang bikin hari-hariku terasa lebih menyenangkan.</p>
         </div>
         <div class="card">
-          <img src="Foto3.jpeg" alt="Kenangan Nazwa" style="width:100%;height:240px;object-fit:cover;border-radius:5px" onerror="this.style.display='none'">
+          <img src="foto/Foto3.jpeg" alt="Kenangan Nazwa" style="width:100%;height:240px;object-fit:cover;border-radius:5px" onerror="this.style.display='none'">
           <h3 style="margin-top:15px">Sweet Memories 🌷</h3>
           <p>Kenangan yang pengin aku simpan baik-baik.</p>
         </div>
@@ -502,6 +543,7 @@
         Say Hi! →
       </button>
     </section>
+
     <!-- CONTACT -->
     <section id="contact" class="page">
       <div class="contact">
@@ -534,10 +576,12 @@
       </div>
     </section>
   </main>
+
   <footer>
     <span>© 2026 Nazwa</span>
     <span>Made with ♡ and a little bit of Nazwa</span>
   </footer>
+
   <script>
     // Navigasi antarhalaman
     function showPage(pageId) {
@@ -556,6 +600,7 @@
       });
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
     // Buka dan tutup detail jika diperlukan
     function toggleProject(card) {
       card.classList.toggle('open');
@@ -566,6 +611,7 @@
         hint.textContent = 'Lihat detail +';
       }
     }
+
     // Salin email
     async function copyEmail() {
       const email = document.getElementById('email-text').textContent.trim();
